@@ -1,0 +1,184 @@
+/* general */
+:root
+{
+--font-height: 18px;
+
+--color-bg-dark: #19181a;
+--color-bg-light: #28272b;
+--color-fg-text: #ebedf0;
+--color-fg2: #979797;
+--color-fg3: #7f8188;
+--color-fg4: #14e35f;
+--color-shadow: #19181a;
+
+--time-menu: 0.13s;
+--width-menu: 240px;
+--height-menu: 400px;
+--menu-padding-desktop: 20px;
+
+--size-burger: 85px;
+
+--radius-menu: 3px;
+--radius-button: 3px;
+--radius-article: 3px;
+
+--width-half-body: 600px;
+--width-about: 560px;
+
+--width-article-imgs: 550px;
+--height-article-imgs: 309px;
+
+--width-article-button: 140px;
+}
+
+@media screen and (min-resolution:130dpi)
+{
+:root
+{
+--size-burger:60px;
+
+--radius-menu:6px;
+--radius-button:9px;
+--radius-project:21px;
+}
+}
+
+*
+{
+margin:0;
+padding:0;
+}
+
+html, body
+{
+width:100%;
+height:100%;
+}
+
+
+body
+{
+overflow-x:hidden;
+overflow-y:scroll;
+scroll-behavior:smooth;
+
+font-size:var(--font-height);
+font-family:
+	Arial,
+	Helvetica,
+	"Nimbus Sans L",
+	"Liberation Sans",
+	FreeSans,
+	Sans-serif;
+
+color:var(--color-fg-text);
+
+text-decoration:none;
+border:none;
+}
+
+nav ul
+{
+margin:0;
+padding:0;
+
+width:100%;
+
+list-style-type:none;
+}
+
+@media all and (min-width: 1240px)
+{
+/* nav */
+/* hide mobile menu structures */
+.nav_menu
+{
+margin:0;
+padding:0;
+width:100%;
+height:100%;
+}
+
+#nav_open, #nav_close
+{
+display:none;
+}
+
+/* display desktop menu as intended */
+nav
+{
+overflow-x:hidden;
+position:fixed;
+
+top:0;
+left:calc(50% - var(--width-half-body));
+
+height:100%;
+width:var(--width-menu);
+}
+
+.nav_static
+{
+overflow-y:scroll;
+position:absolute;
+
+margin:0;
+padding:0;
+padding-right:var(--width-menu);
+
+width:100%;
+max-height:100%;
+}
+
+/* chrome is shit (hack) */
+.nav_static::-webkit-scrollbar
+{
+display: none;
+}
+
+.nav_scroll
+{
+padding:var(--menu-padding-desktop);
+
+left:0;
+right:0;
+
+width:calc(var(--width-menu) - var(--menu-padding-desktop));
+}
+
+nav ul li a
+{
+display:block;
+
+margin:0px 0px 7px 7px;
+padding:0;
+padding-left:14px;
+
+height:42px;
+line-height:42px;
+
+border-radius:var(--radius-button);
+}
+
+nav ul li a:hover
+{
+background:var(--color-bg-light);
+}
+}
+
+/* page */
+#body_div
+{
+position:absolute;
+
+margin:var(--menu-padding-desktop) 0 0 0;
+min-height:calc(100% - var(--menu-padding-desktop));
+
+top:0;
+left:calc(50% - var(--width-half-body) + var(--width-menu) + var(--menu-padding-desktop));
+right:calc(50% - var(--width-half-body));
+
+/*
+transition:left 0.25s linear 0s, right 0.25s linear 0s, padding 0.25s linear 0s;
+*/
+}

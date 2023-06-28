@@ -1,0 +1,159 @@
+:root
+{
+--article-margin:22px;
+--section-margin:60px;
+--p-padding:7px;
+--summary-padding:19px;
+
+--height-project-links:calc(4 * var(--font-height));
+}
+
+a
+{
+color:var(--color-fg-text);
+text-decoration:none;
+}
+
+#home_about a, #home_contact a, #blog h1 a
+{
+color:var(--color-fg4);
+}
+
+h1, h2
+{
+margin:0;
+padding:calc(var(--font-height) * 0.5) 0 calc(var(--font-height) * 0.5) 0;
+font-size:calc(var(--font-height) * 1.4);
+text-align:center;
+}
+
+h3, h4, h5, h6
+{
+margin:0;
+padding:calc(var(--font-height) * 0.5) 0 calc(var(--font-height) * 0.5) 0;
+font-size:calc(var(--font-height) * 1.2);
+text-align:center;
+}
+
+p
+{
+padding:var(--p-value) 0 var(--p-padding) 0;
+}
+
+section
+{
+margin:0 0 var(--section-margin) 0;
+}
+
+article
+{
+margin:var(--article-margin) 0 var(--article-margin) 0;
+}
+
+#body_div img
+{
+display:block;
+max-width:100%;
+}
+
+#home_about p
+{
+text-align:justify;
+text-align-last:center;
+max-width:var(--width-about);
+margin:0 auto 10px auto;
+}
+
+.email
+{
+position:absolute;
+left:-9999px;
+}
+
+#addr
+{
+display:inline-block;
+position:relative;
+top:3.5px;
+height:var(--font-height);
+}
+
+article
+{
+width:100%;
+border-radius:var(--radius-article);
+background:var(--color-bg-light);
+}
+
+#home_projects img
+{
+display:block;
+margin-left:0;
+width:var(--width-article-imgs);
+/*
+transition:margin 0.15s linear 0.1s;
+*/
+box-shadow: 0px 0px 4px var(--color-shadow);
+}
+
+#home_projects .project_entry
+{
+margin-top:calc(0px - var(--height-article-imgs));
+margin-left:var(--width-article-imgs);
+min-height:var(--height-article-imgs);
+overflow:hidden;
+/*
+transition:margin-top 0.1s linear 0.1s,
+           margin-left 0.1s linear 0.0s;
+*/
+}
+
+#home_projects article .project_summary
+{
+height:calc(100% - var(--summary-padding) - var(--height-project-links));
+min-height:calc(var(--height-article-imgs) - var(--summary-padding) - var(--height-project-links));
+padding:0 var(--summary-padding) var(--summary-padding) var(--summary-padding);
+}
+
+#home_projects article .project_summary p
+{
+word-break:break-word;
+}
+
+#home_projects article .project_links
+{
+width:100%;
+height:var(--height-project-links);
+bottom:0;
+}
+
+#home_projects article .project_links p
+{
+height:calc(100% - 2 * var(--p-padding));
+}
+
+#home_projects article .project_links a
+{
+display:block;
+
+padding:var(--font-height);
+margin:0 auto;
+
+width:var(--width-article-button);
+
+border-radius:var(--radius-button);
+background:var(--color-bg-dark);
+
+text-align:center;
+}
+
+#home_contact
+{
+text-align:center;
+}
+
+#home_logo
+{
+margin:0 auto;
+max-width:100%;
+}

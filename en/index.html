@@ -1,0 +1,401 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Guillaume Nicolussi Castellan - Projects</title>
+<meta name="description" content="Mes projets en programmation, électronique et conception 3D">
+<meta name="author" content="Guillaume Nicolussi Castellan">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="res/style/main.css">
+<link rel="stylesheet" href="res/style/home.css">
+<link rel="stylesheet" href="res/style/mobile.css">
+<link rel="icon" type="image/x-icon" href="res/img/favicon.ico">
+</head>
+
+<style>
+body {background:#19181a;}
+body * {opacity:0;}
+</style>
+
+<body>
+<nav>
+<div id="nav_menu">
+	<a id="nav_open" href="#nav_open">
+	<div class="nav_burger">
+		<div class="nav_burger_bar"></div>
+		<div class="nav_burger_bar"></div>
+		<div class="nav_burger_bar"></div>
+	</div>
+	</a>
+
+	<a id="nav_close" href="#nav_close"></a>
+
+	<div class="nav_drop">
+	<div class="nav_static">
+	<div class="nav_scroll">
+	<div class="nav_border"></div>
+	<ul>
+		<li><a href="index.html#body_div">Home</a></li>
+		<li><a href="index.html#home_about">About me</a></li>
+		<li><a href="index.html#home_projects">Projects</a></li>
+		<li><a href="index.html#home_contact">Contact</a></li>
+		<li><a href="https://nicolussi.fr/">Français</a></li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</div>
+</nav>
+
+<div id="body_div">
+<section id="home_intro">
+<img id="home_logo" src="res/img/logo.png">
+</section>
+
+<section id="home_about">
+<h1>About me</h1>
+<p>Passionate programmer, specialized in low-level implementation of
+interactive visual applications. I search at the heart of display
+systems and microarchitectures the bases upon which to build
+real-time rendering engines and user interfaces. Graduate engineer
+from the &quot;École Supérieure d'Ingénieurs de Paris-Est&quot; in France,
+interested in origami, cinema, writing and demomaking.</p>
+</section>
+
+<section id="home_projects">
+<h2>Video games</h2>
+<article>
+<img src="res/img/portfolio/0_games/1.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Deathloop</h3>
+<p>Maintenance work on a code processing tool from Arkane's
+Void engine, performed during the development of Deathloop.</p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/0_games/2.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Wizard Hazard</h3>
+<p>Hybrid 3D game comnbining survival, action and tower defense.
+This was a Unity group project completed during our course at IMAC.
+The game environment is interactive and provides resources. It also
+evolves continuously through a dynamic fauna and flora system.
+I mainly worked on AI for the ennemies, who regroup intelligently
+and run away from danger chaotically during attack phases.</p>
+</div>
+</div>
+</article>
+<h2>Real-time rendering</h2>
+<article>
+<img src="res/img/portfolio/1_rendering/1.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>glTF viewer with PBR and IBL</h3>
+<p>Simple glTF viewer made for a school project at IMAC, with support for
+<em>Physically-Based Rendering</em> and <em>Image-Based Lighting</em>.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/gltf-viewer-tutorial">Github</a></p>
+</div>
+</div>
+</article>
+<h2>System software and libraries</h2>
+<article>
+<img src="res/img/portfolio/2_systems/01.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Globox</h3>
+<p>Globox is a cross-platform windowing library. It runs under Windows (GDI / WDM),
+Linux (libwayland / Wayland, XCB / X11) and MacOS (AppKit / Quartz).</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/globox">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/02.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Willis</h3>
+<p>Willis is an input-handling library for traditional desktop peripherals
+(keyboard and mouse). It provides the features common to Windows, Linux
+and MacOS in a completely portable way.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/willis">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/03.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Cursoryx</h3>
+<p>Cursoryx is a mouse-cursor management library for Windows, Linux and
+MacOS. Like Willis, it supports the functionalities these three
+platforms have in common.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/cursoryx">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/04.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>DPIshit</h3>
+<p>DPIshit is a screen density information acquisition library for Windows, Linux
+(Wayland / X11) and macOS.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/dpishit">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/05.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Razorbeard</h3>
+<p>Razorbeard is a GUI toolkit usable entirely programmatically.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/razorbeard">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/06.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Mechascribe</h3>
+<p>Mechascribe is an all-in-one text rendering library based on Raqm, Freetype,
+Hydraquill, Zstd, Cifra and Noto. Its goal is to support as many scripts as
+possible while handling very complex layouts.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/mechascribe">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/07.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Hydraquill</h3>
+<p>Hydraquill is a compressed font distribution library.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/hydraquill">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/08.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Ly</h3>
+<p>Console display manager for X11 and Wayland.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/ly">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/09.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Black Ice Viewer UI</h3>
+<p>Linux and Android GUI for Senssight's image processing software.</p>
+</div><div class="project_links">
+<p><a href="https://senssight.com">Senssight</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/10.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Argoat</h3>
+<p>Argument parsing library for command-line tools in 206 lines of code
+and without <code>switch</code> or macro.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/argoat">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/11.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Configator</h3>
+<p>Lightweight <code>.ini</code> reading library in 264 lines of code and
+without internal state machine.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/configator">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/12.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Dragonfail</h3>
+<p>Error-handling library with an entirely static design but a very
+easy to use and adaptable code totalling 78 lines (thanks to a C99 trick).</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/dragonfail">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/13.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Testoasterror</h3>
+<p>Unit-testing library in 133 lines of code.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/testoasterror">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/14.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Bayou</h3>
+<p>Experimental memory management library, based on a memory pool optimized for
+<em>n</em>-tree structures and including an iterative micro-defragmentation system.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/bayou">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/2_systems/15.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Rastarizer</h3>
+<p>Experimental 2D rasterization library, using only fixed-poing math.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/rastarizer">Github</a></p>
+</div>
+</div>
+</article>
+<h2>Legacy projects</h2>
+<article>
+<img src="res/img/portfolio/3_legacy/1.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Passware</h3>
+<p>Hardware password manager based on the first raspberry pi zero (before WiFi).</p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/3_legacy/2.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Excalibar</h3>
+<p>Modular task bar for X11.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/excalibar">Github</a></p>
+</div>
+</div>
+</article>
+<h2>Web</h2>
+<article>
+<img src="res/img/portfolio/4_web/1.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>OpenNic DuckDuckGo Instant Answer</h3>
+<p>DuckDuckGo Gadget listing nearby OpenNic DNS servers.</p>
+</div><div class="project_links">
+<p><a href="https://duckduckgo.com/?q=opennic+dns&amp;t=ffab&amp;ia=dns">See it in action</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/4_web/2.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>This website</h3>
+<p>0% javascript / 100% responsive</p>
+</div><div class="project_links">
+<p><a href="https://nicolussi.fr/en">Already here</a></p>
+</div>
+</div>
+</article>
+<h2>Modding</h2>
+<article>
+<img src="res/img/portfolio/5_modding/1.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Cylinder scripts</h3>
+<p>Additional effects for r333d's &quot;Cylinder&quot; tweak available on Cydia
+and compatible with iPhones and iPads.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/cylinder_scripts">Github</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/5_modding/2.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>WeirdAdditions</h3>
+<p>Minecraft Mod adding cow seeds and nursing bottles.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/dreeks/WeirdAdditions">Github</a></p>
+</div>
+</div>
+</article>
+<h2>Graphics</h2>
+<article>
+<img src="res/img/portfolio/6_2d/1.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Microstorm Linux Cursors</h3>
+<p>Minimalistic cursor theme designed to look good with and without gamma correction.</p>
+</div><div class="project_links">
+<p><a href="https://github.com/nullgemm/cursoryx/releases/">Download</a></p>
+</div>
+</div>
+</article>
+<h2>3D Design</h2>
+<article>
+<img src="res/img/portfolio/7_3d/1.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Printable objects</h3>
+<p>Various objects designed with Solidworks</p>
+</div><div class="project_links">
+<p><a href="https://www.youmagine.com/nullgemm/designs">YouMagine</a></p>
+</div>
+</div>
+</article>
+<article>
+<img src="res/img/portfolio/7_3d/2.png" alt="0.txt">
+<div class="project_entry">
+<div class="project_summary">
+<h3>Minecraft 3D models</h3>
+<p>3D models for several Minecraft mods.</p>
+</div>
+</div>
+</article>
+</section>
+
+<section id="home_contact">
+<h2>Contact</h2>
+<p>
+You can contact me by email:
+<span class="email">fakeforbots@gmail.com</span>
+<object id="addr" data="res/addr.svg" type="image/svg+xml"></object>
+</p>
+<p>
+or using my
+<a  href="https://www.linkedin.com/in/guinc/">Linkedin</a>
+profile
+(you must be logged in to be able to see it).
+</p>
+</section>
+</div>
+</body>
+</html>

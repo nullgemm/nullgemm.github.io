@@ -85,6 +85,11 @@ border-radius:var(--radius-article);
 background:var(--color-bg-light);
 }
 
+#home_intro
+{
+margin:0 0 var(--section-margin) 0;
+}
+
 #home_projects img
 {
 display:block;

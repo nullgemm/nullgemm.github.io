@@ -16,11 +16,11 @@
 --height-menu: 400px;
 --menu-padding-desktop: 20px;
 
---size-burger: 85px;
+--size-burger: 60px;
 
---radius-menu: 3px;
---radius-button: 3px;
---radius-article: 3px;
+--radius-menu:6px;
+--radius-button:9px;
+--radius-article:21px;
 
 --width-half-body: 600px;
 --width-about: 560px;
@@ -29,18 +29,6 @@
 --height-article-imgs: 309px;
 
 --width-article-button: 140px;
-}
-
-@media screen and (min-resolution:130dpi)
-{
-:root
-{
---size-burger:60px;
-
---radius-menu:6px;
---radius-button:9px;
---radius-project:21px;
-}
 }
 
 *
@@ -120,6 +108,7 @@ width:var(--width-menu);
 .nav_static
 {
 overflow-y:scroll;
+overflow-x:hidden;
 position:absolute;
 
 margin:0;

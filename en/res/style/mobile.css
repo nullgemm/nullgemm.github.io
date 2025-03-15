@@ -224,7 +224,6 @@ top:0;
 left:0;
 bottom:0;
 
-width:var(--width-menu);
 height:100%;
 }
 
@@ -239,9 +238,8 @@ nav ul li
 display:table;
 margin:0 auto;
 padding:0;
-padding-left:3px;
 height:calc(var(--height-menu) / 5);
-width:calc(100% + 6px);
+width:100%;
 }
 
 nav ul li a
@@ -273,32 +271,6 @@ height:calc(100% - 6px);
 }
 
 @media all and (max-width: 550px)
-{
-.nav_drop
-{
-margin:0;
-padding-top:3%;
-padding-bottom:3%;
-left:0;
-top:0;
-}
-
-.nav_static
-{
-left:0;
-width:94%;
-margin:0 auto;
-}
-
-nav ul
-{
-width:100%;
-}
-}
-
-/* we must duplicate the above media query because webkite sucks */
-/* and does not support "or" conditions whatever the form we use */
-@media all and (min-resolution:130dpi)
 {
 .nav_drop
 {

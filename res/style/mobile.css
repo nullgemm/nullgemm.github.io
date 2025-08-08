@@ -17,7 +17,7 @@ max-width:var(--width-article-imgs);
 #home_projects img
 {
 margin-left:calc(50% - var(--width-article-imgs) / 2);
-border-radius:var(--radius-article) var(--radius-article) 0 0;
+border-radius:var(--radius-article) var(--radius-article) 0 0 !important;
 }
 
 #home_projects .project_entry

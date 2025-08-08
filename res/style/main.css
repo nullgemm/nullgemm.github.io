@@ -160,7 +160,7 @@ background:var(--color-bg-light);
 {
 position:absolute;
 
-margin:var(--menu-padding-desktop) 0 0 0;
+margin:0;
 min-height:calc(100% - var(--menu-padding-desktop));
 
 top:0;

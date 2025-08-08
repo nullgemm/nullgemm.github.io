@@ -42,7 +42,7 @@ padding-right:var(--menu-padding-desktop);
 {
 #body_div
 {
-margin:var(--menu-padding-desktop) auto 0 auto;
+margin:0 auto 0 auto;
 left:calc(50% - 470px);
 right:calc(50% - 470px);
 }

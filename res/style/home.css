@@ -87,7 +87,7 @@ background:var(--color-bg-light);
 
 #home_intro
 {
-margin:0 0 var(--section-margin) 0;
+margin:var(--menu-padding-desktop) 0 var(--section-margin) 0;
 }
 
 #home_projects img

@@ -61,8 +61,6 @@ max-width:100%;
 
 #home_about p
 {
-text-align:justify;
-text-align-last:center;
 max-width:var(--width-about);
 margin:0 auto 10px auto;
 }
